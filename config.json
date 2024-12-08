@@ -1,0 +1,7 @@
+{
+  "grant_type": "password",
+  "client_id": "your_client_id_here",
+  "client_secret": "your_client_secret_here",
+  "username": "your_salesforce_username_here",
+  "password": "your_salesforce_password_and_security_token_here"
+}
