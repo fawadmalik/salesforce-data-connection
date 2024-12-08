@@ -341,6 +341,14 @@ const saveLeadToFile = (leadDetails) => {
 
 ```
 
+## **How to run the code**
+
+Once you clone this repository cd to the directory, then run the following command
+```javascript
+node createlead.js
+
+```
+
 ---
 
 ## **Final Output**
