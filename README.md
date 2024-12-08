@@ -1,4 +1,13 @@
 "# salesforce-data-connection" 
+
+Run the following command to create a lead
+
+```javascript
+
+node createlead.js
+
+```
+
 # **Mater Automating Salesforce Data Manipulation with Node.js: A Weekend Project**
 
 Imagine having the power to programmatically set up, manipulate, and retrieve Salesforce data with just a few lines of code. Whether you're a QA engineer looking to create realistic test data, a developer automating data setup for demos, or a tech-savvy business analyst exploring Salesforce's vast API capabilities, this guide is for you.
