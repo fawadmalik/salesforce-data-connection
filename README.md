@@ -370,13 +370,13 @@ This is just Part 1. In Part 2, we’ll expand this foundation into comprehensiv
 **Used in dataconnect.js**: To authenticate with Salesforce by sending an HTTP POST request to the OAuth2 token endpoint.
 **Used in createlead.js**: To send HTTP POST and GET requests for creating and retrieving Salesforce Leads.
 
-For further knowledge check out: Axios(https://axios-http.com/docs/intro)
+For further knowledge check out: [Axios](https://axios-http.com/docs/intro)
 
 **2. qs** : qs is a library for parsing and stringifying query strings. It helps serialize data into the application/x-www-form-urlencoded format required by the Salesforce OAuth2 endpoint. Ensures compatibility with the application/x-www-form-urlencoded content type, which is required by many APIs (including Salesforce’s OAuth2 endpoint).
 
 **Used in dataconnect.js**: To format the OAuth2 credentials as URL-encoded data for the POST request.
 
-**For further knowledge check out: qs(https://www.npmjs.com/package/qs)**
+**For further knowledge check out: [qs](https://www.npmjs.com/package/qs)**
 
 **3. fs** : fs is Node.js’s built-in file system module. It allows reading, writing, and managing files in the local file system.
 
@@ -384,13 +384,13 @@ For further knowledge check out: Axios(https://axios-http.com/docs/intro)
 
 **Used in createlead.js**: To read the Lead data model from leadModel.json. To save the details of created Leads to a timestamped JSON file.
 
-**For further knowledge check out: fs(https://nodejs.org/api/fs.html)**
+**For further knowledge check out: [fs](https://nodejs.org/api/fs.html)**
 
 **4. path** : path is a Node.js built-in module for handling and transforming file paths. It ensures cross-platform compatibility when dealing with file paths and handles platform-specific path separators (/ vs \\), ensuring the code works on all systems.
 
 **Used in dataconnect.js and createlead.js**: To resolve file paths for config.json and leadModel.json.
 
-**For further knowledge check out: path(https://nodejs.org/api/path.html)**
+**For further knowledge check out: [path](https://nodejs.org/api/path.html)**
 
 ### **Advantages of Using These Libraries**
 1. **Efficient API Interaction**: Axios provides a straightforward way to send HTTP requests and handle responses, simplifying interaction with Salesforce’s REST API.
