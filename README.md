@@ -150,18 +150,15 @@ const authenticateSalesforce = async () => {
 
     // Check if the configuration file exists
     if (!fs.existsSync(configPath)) {
-        console.error(`
-Error: Configuration file not found.
-
-Please create a file named "config.json" in the same directory as this script with the following content:
-
-{
-  "grant_type": "password",
-  "client_id": "your_client_id_here",
-  "client_secret": "your_client_secret_here",
-  "username": "your_salesforce_username_here",
-  "password": "your_salesforce_password_and_security_token_here"
-}
+        console.error(`Error: Configuration file not found.
+		Please create a file named "config.json" in the same directory as this script with the following content:
+		{
+		  "grant_type": "password",
+		  "client_id": "your_client_id_here",
+		  "client_secret": "your_client_secret_here",
+		  "username": "your_salesforce_username_here",
+		  "password": "your_salesforce_password_and_security_token_here"
+		}
         `);
         process.exit(1);
     }
@@ -212,6 +209,7 @@ module.exports = authenticateSalesforce;
 ---
 
 ## **Step 4: Programmatically Create and Retrieve Leads**
+In order to not have to change the code file, let us move the fields that define the Lead to a json file that serves as a model for the lead to create. Add whichever fields that can be filled for Lead creation
 
 ### **Define Lead Model: `leadModel.json`**
 ```json
@@ -232,7 +230,8 @@ module.exports = authenticateSalesforce;
 
 ```
 
-### **Script: `createlead.js`**
+### **Lead handling Script: 'createlead.js'**
+
 ```javascript
 
 const axios = require('axios');
